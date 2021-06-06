@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <title>Cursor - IN - OUT</title>
+    <meta charset="UTF-8">
+    
+    <meta name="description" content="Funciones JQuery">
+    <meta name="author" content="RonaldGuerrero0071">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!--CSS propio-->
+    <link rel="stylesheet" href="./assets/styles_cursor-in-out.css">
+
+    <!-- JS Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('img').hover(function(){
+          var cara = $(this).attr('src');
+          var sello = $(this).attr('data-alt-src');
+          $(this).attr('src', sello);
+          $(this).attr('data-alt-src', cara);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!--HEADER-->
+    
+    <!--NAV-->
+    <!--MAIN-->
+      <div class="container">
+        <h1>Ancient Coins</h1>
+        <div class="row">
+          <div class="box">
+            <img src="img/coin1a.jpg" data-alt-src="img/coin1b.jpg">
+          </div>
+          <div class="box">
+            <img src="img/coin2a.jpg" data-alt-src="img/coin2b.jpg">
+          </div>
+          <div class="box">
+            <img src="img/coin3a.jpg" data-alt-src="img/coin3b.jpg">
+          </div>
+          <div class="box">
+            <img src="img/coin4a.jpg" data-alt-src="img/coin4b.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <img src="img/coin5a.jpg" data-alt-src="img/coin5b.jpg">
+          </div>
+          <div class="box">
+            <img src="img/coin6a.jpg" data-alt-src="img/coin6b.jpg">
+          </div>
+          <div class="box">
+            <img src="img/coin7a.jpg" data-alt-src="img/coin7b.jpg">
+          </div>
+          <div class="box">
+            <img src="img/coin8a.jpg" data-alt-src="img/coin8b.jpg">
+          </div>
+        </div>
+        <br>
+        <br>
+        <p>Hover over the image to see the other side of the coin</p>
+      </div>
+    <!--SECTION-->
+    <!--ARTICLE-->
+    <!--FOOTER-->
+        <!--JS bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
